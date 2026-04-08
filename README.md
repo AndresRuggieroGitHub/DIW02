@@ -1,4 +1,4 @@
-﻿# ðŸŒ Lexi - Plataforma de aprendizaje de ingles
+﻿# Lexi - Plataforma de aprendizaje de ingles
 
 ![HTML](https://img.shields.io/badge/HTML-5-orange)
 ![CSS](https://img.shields.io/badge/CSS-3-blue)
@@ -8,7 +8,7 @@
 
 Aplicacion web desarrollada para la asignatura DIW (Diseno de Interfaces Web), orientada a la practica de ingles mediante ejercicios e interacciones simples y usables.
 
-## ðŸ“‹ Descripcion
+## Descripcion
 
 Lexi es una web educativa centrada en la experiencia de usuario, con navegacion clara, diseno responsive e interacciones para reforzar la practica de idiomas.
 
@@ -19,7 +19,7 @@ Incluye:
 - Pagina de contacto
 - Pagina de carrito funcional
 
-## ðŸš€ Funcionalidades principales
+## Funcionalidades principales
 
 - Menu responsive para movil y escritorio
 - Carrusel de contenidos destacados
@@ -31,14 +31,14 @@ Incluye:
 - Modal de confirmacion para eliminar productos
 - Atajo de teclado: tecla T para volver al inicio
 
-## â™¿ Accesibilidad y usabilidad
+## Accesibilidad y usabilidad
 
 - Enlace Saltar al contenido para navegacion por teclado
 - Focus visible en elementos interactivos
 - Estructura semantica en las paginas principales
 - Revision con Lighthouse (capturas incluidas en la memoria)
 
-## ðŸ› ï¸ Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - HTML5
 - CSS3
@@ -46,7 +46,7 @@ Incluye:
 - Bootstrap 5
 - Bootstrap Icons
 
-## ðŸ“‚ Estructura del proyecto
+## Estructura del proyecto
 
 - sources/Lexi/index.html - Pagina principal
 - sources/Lexi/ejercicios.html - Ejercicios
@@ -58,20 +58,20 @@ Incluye:
 - sources/Lexi/style.css - Estilos
 - sources/Lexi/js/script.js - Logica e interacciones
 
-## â–¶ï¸ Como ejecutar
+## Como ejecutar
 
 1. Descargar o clonar el repositorio.
 2. Abrir index.html en el navegador.
 
-## ðŸŒ Publicacion
+## Publicacion
 
-- Repositorio: AQUI_TU_URL_DE_GITHUB
-- GitHub Pages: AQUI_TU_URL_DE_PAGES
+- Repositorio: https://github.com/AndresRuggieroGitHub/DIW6
+- GitHub Pages: https://andresruggierogithub.github.io/DIW6/
 
-## ðŸŽ¥ Demo
+## Demo
 
 Video de validacion en dos navegadores: AQUI_TU_ENLACE_DE_VIDEO
 
-## ðŸ‘¤ Autor
+## Autor
 
 Andres Ruggiero
