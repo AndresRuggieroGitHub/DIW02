@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ejercicios de ingles en Lexi para reading, listening, speaking y writing.">
+  <meta name="robots" content="index,follow">
+  <title>Lexi | Ejercicios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#mainContent" class="skip-link">Saltar al contenido</a>
+
+<header class="header">
+  <div class="header-left">
+    <a class="logo" href="index.html" aria-label="Ir a inicio Lexi">
+      <img src="icons/logo.svg" alt="Logo Lexi">
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">
+      <i class="bi bi-list"></i>
+    </button>
+    <nav class="nav-left" id="mainNav">
+      <a href="index.html">Inicio</a>
+      <a class="active" href="ejercicios.html">Ejercicios</a>
+      <a href="producto.html">Producto</a>
+      <a href="busqueda.html">Busqueda</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="info.html">Info</a>
+    </nav>
+  </div>
+
+  <div class="header-right">
+    <button class="icon-btn" type="button" aria-label="Progreso">
+      <img src="icons/progress.svg" alt="Progreso" class="icono-oscilante">
+    </button>
+    <button class="icon-btn" type="button" aria-label="Idioma ingles">
+      <img src="icons/united_kingdom_flag.svg" alt="Bandera de idioma" class="icono-parpadeante">
+    </button>
+    <button class="icon-btn" type="button" aria-label="Perfil">
+      <img src="icons/profile.svg" alt="Perfil">
+    </button>
+    <button class="icon-btn cart-trigger" type="button" data-cart-trigger aria-label="Abrir carrito">
+      <i class="bi bi-cart3"></i>
+      <span class="cart-count-badge" data-cart-count>0</span>
+    </button>
+  </div>
+</header>
+
+<main id="mainContent" class="exercises page-main">
+  <h1 class="exercises-title">Como te gustaria repasar?</h1>
+
+  <section class="exercise-grid">
+    <article class="exercise-card">
+      <a href="images/reading_large.webp" target="_blank">
+        <img src="images/reading_small.webp" srcset="images/reading_small.webp 300w, images/reading_medium.webp 600w, images/reading_large.webp 900w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 20vw" loading="lazy" alt="Ejercicio de reading">
+      </a>
+      <p>Lee</p>
+    </article>
+
+    <article class="exercise-card">
+      <a href="images/listening_large.webp" target="_blank">
+        <img src="images/listening_small.webp" srcset="images/listening_small.webp 300w, images/listening_medium.webp 600w, images/listening_large.webp 900w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 20vw" loading="lazy" alt="Ejercicio de listening">
+      </a>
+      <p>Escucha</p>
+    </article>
+
+    <article class="exercise-card">
+      <a href="images/speaking_large.webp" target="_blank">
+        <img src="images/speaking_small.webp" srcset="images/speaking_small.webp 300w, images/speaking_medium.webp 600w, images/speaking_large.webp 900w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 20vw" loading="lazy" alt="Ejercicio de speaking">
+      </a>
+      <p>Habla</p>
+    </article>
+
+    <article class="exercise-card">
+      <a href="images/writing_large.webp" target="_blank">
+        <img src="images/writing_small.webp" srcset="images/writing_small.webp 300w, images/writing_medium.webp 600w, images/writing_large.webp 900w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 20vw" loading="lazy" alt="Ejercicio de writing">
+      </a>
+      <p>Escribe</p>
+    </article>
+
+    <article class="exercise-card">
+      <a href="images/mix_large.webp" target="_blank">
+        <img src="images/mix_small.webp" srcset="images/mix_small.webp 300w, images/mix_medium.webp 600w, images/mix_large.webp 900w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 20vw" loading="lazy" alt="Ejercicio mixto de ingles">
+      </a>
+      <p>Mix</p>
+    </article>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Lexi Â© 2026 Â· <a href="info.html">Informacion</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

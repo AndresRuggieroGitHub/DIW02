@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lexi, plataforma para practicar ingles con ejercicios de listening, reading, writing y speaking.">
+  <meta name="robots" content="index,follow">
+  <title>Lexi | Aprende idiomas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#mainContent" class="skip-link">Saltar al contenido</a>
+
+<header class="header">
+  <div class="header-left">
+    <a class="logo" href="index.html" aria-label="Ir a inicio Lexi">
+      <img src="icons/logo.svg" alt="Logo Lexi">
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">
+      <i class="bi bi-list"></i>
+    </button>
+    <nav class="nav-left" id="mainNav">
+      <a class="active" href="index.html">Inicio</a>
+      <a href="ejercicios.html">Ejercicios</a>
+      <a href="producto.html">Producto</a>
+      <a href="busqueda.html">Busqueda</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="info.html">Info</a>
+    </nav>
+  </div>
+
+  <div class="header-right">
+    <button class="icon-btn" type="button" aria-label="Progreso">
+      <img src="icons/progress.svg" alt="Progreso" class="icono-oscilante">
+    </button>
+    <button class="icon-btn" type="button" aria-label="Idioma ingles">
+      <img src="icons/united_kingdom_flag.svg" alt="Bandera de idioma" class="icono-parpadeante">
+    </button>
+    <button class="icon-btn" type="button" aria-label="Perfil">
+      <img src="icons/profile.svg" alt="Perfil">
+    </button>
+    <button class="icon-btn cart-trigger" type="button" data-cart-trigger aria-label="Abrir carrito">
+      <i class="bi bi-cart3"></i>
+      <span class="cart-count-badge" data-cart-count>0</span>
+    </button>
+  </div>
+</header>
+
+<main id="mainContent" class="hero">
+  <div class="hero-text scroll-animado">
+    <h1>Practica el vocabulario que realmente necesitas</h1>
+  </div>
+  <button class="btn btn-warning cta" data-bs-toggle="modal" data-bs-target="#modalLexi">Empezar a practicar</button>
+</main>
+
+<section class="carrusel-bootstrap container section-space">
+  <h2>Destacados</h2>
+  <div id="carouselLexi" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/listening_large.webp" class="d-block w-100" alt="Ejercicio listening">
+      </div>
+      <div class="carousel-item">
+        <img src="images/reading_large.webp" class="d-block w-100" alt="Ejercicio reading">
+      </div>
+      <div class="carousel-item">
+        <img src="images/speaking_large.webp" class="d-block w-100" alt="Ejercicio speaking">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselLexi" data-bs-slide="prev" aria-label="Anterior">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselLexi" data-bs-slide="next" aria-label="Siguiente">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+</section>
+
+<div class="separador"></div>
+
+<section class="destacados section-space">
+  <article class="libro" tabindex="0">
+    <div class="imagen-principal">
+      <img src="images/vocabulario.png" alt="Practica vocabulario">
+    </div>
+    <p>Vocabulario util</p>
+  </article>
+
+  <article class="libro" tabindex="0">
+    <img src="images/gramatica.png" alt="Practica gramatica">
+    <p>Gramatica facil</p>
+  </article>
+</section>
+
+<section class="container section-space">
+  <h2>Practica por tipo</h2>
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#vocab" type="button" role="tab">Vocabulario</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#gram" type="button" role="tab">Gramatica</button>
+    </li>
+  </ul>
+
+  <div class="tab-content mt-3">
+    <div class="tab-pane fade show active" id="vocab" role="tabpanel">
+      <button class="btn btn-primary accion" type="button">Practicar</button>
+    </div>
+    <div class="tab-pane fade" id="gram" role="tabpanel">
+      <button class="btn btn-primary accion" type="button">Practicar</button>
+    </div>
+  </div>
+</section>
+
+<section class="container section-space">
+  <h2>Preguntas frecuentes</h2>
+  <div class="accordion" id="faqLexi">
+    <div class="accordion-item">
+      <h3 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#p1" aria-expanded="true">
+          Que es Lexi?
+        </button>
+      </h3>
+      <div id="p1" class="accordion-collapse collapse show" data-bs-parent="#faqLexi">
+        <div class="accordion-body">Plataforma para aprender idiomas con ejercicios personalizados.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container section-space">
+  <h2>Cursos premium</h2>
+  <div class="card p-3 shadow-sm">
+    <h3 class="h5">Curso ingles basico</h3>
+    <p class="mb-3">19 EUR</p>
+    <button class="btn btn-success" type="button" data-add-cart data-id="curso-ingles-basico" data-name="Curso ingles basico" data-price="19">Anadir al carrito</button>
+  </div>
+</section>
+
+<div class="modal fade" id="modalLexi" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="h5 mb-0">Empieza ahora</h2>
+        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">Selecciona una practica y empieza.</div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>Lexi Â© 2026 Â· <a href="info.html">Informacion</a></p>
+</footer>
+
+<button id="btnSubir" type="button" aria-label="Subir arriba">â†‘</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

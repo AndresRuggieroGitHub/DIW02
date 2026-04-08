@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pagina de contacto de Lexi.">
+  <meta name="robots" content="index,follow">
+  <title>Lexi | Contacto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#mainContent" class="skip-link">Saltar al contenido</a>
+
+<header class="header">
+  <div class="header-left">
+    <a class="logo" href="index.html" aria-label="Ir a inicio Lexi">
+      <img src="icons/logo.svg" alt="Logo Lexi">
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">
+      <i class="bi bi-list"></i>
+    </button>
+    <nav class="nav-left" id="mainNav">
+      <a href="index.html">Inicio</a>
+      <a href="ejercicios.html">Ejercicios</a>
+      <a href="producto.html">Producto</a>
+      <a href="busqueda.html">Busqueda</a>
+      <a class="active" href="contacto.html">Contacto</a>
+      <a href="info.html">Info</a>
+    </nav>
+  </div>
+
+  <div class="header-right">
+    <button class="icon-btn" type="button" aria-label="Progreso">
+      <img src="icons/progress.svg" alt="Progreso" class="icono-oscilante">
+    </button>
+    <button class="icon-btn" type="button" aria-label="Idioma ingles">
+      <img src="icons/united_kingdom_flag.svg" alt="Bandera de idioma" class="icono-parpadeante">
+    </button>
+    <button class="icon-btn" type="button" aria-label="Perfil">
+      <img src="icons/profile.svg" alt="Perfil">
+    </button>
+    <button class="icon-btn cart-trigger" type="button" data-cart-trigger aria-label="Abrir carrito">
+      <i class="bi bi-cart3"></i>
+      <span class="cart-count-badge" data-cart-count>0</span>
+    </button>
+  </div>
+</header>
+
+<main id="mainContent" class="page-main container section-space">
+  <h1 class="mb-4">Contacto</h1>
+
+  <div class="contact-grid">
+    <section>
+      <h2 class="h4">Escribenos</h2>
+      <form class="contact-form" action="#" method="post">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input id="nombre" name="nombre" class="form-control" type="text" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input id="email" name="email" class="form-control" type="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" class="form-control" rows="4" required></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section>
+      <h2 class="h4">Equipo Lexi</h2>
+      <p>AplicaciÃ³n Web de aprendizaje de idiomas centrada practica personalizada.</p>
+      <p>Email: contacto@lexi.app</p>
+      <p>Ubicacion: Almeria</p>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <p>Lexi Â© 2026 Â· <a href="info.html">Informacion</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
