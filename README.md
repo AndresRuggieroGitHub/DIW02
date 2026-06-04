@@ -1,4 +1,4 @@
-﻿# Lexi - Plataforma de aprendizaje de ingles
+﻿﻿# Lexi - Plataforma de aprendizaje de ingles
 
 ![HTML](https://img.shields.io/badge/HTML-5-orange)
 ![CSS](https://img.shields.io/badge/CSS-3-blue)
@@ -6,7 +6,7 @@
 ![Bootstrap](https://img.shields.io/badge/UI-Bootstrap%205-purple)
 ![Status](https://img.shields.io/badge/Project-DIW%20Final-green)
 
-Aplicacion web desarrollada para la asignatura DIW (Diseno de Interfaces Web), orientada a la practica de ingles mediante ejercicios e interacciones simples y usables.
+Aplicacion web desarrollada para la asignatura DIW (Diseño de Interfaces Web), orientada a la practica de idiomas mediante ejercicios practicos.
 
 ## Descripcion
 
@@ -70,7 +70,7 @@ Incluye:
 
 ## Demo
 
-Video de validacion en dos navegadores: AQUI_TU_ENLACE_DE_VIDEO
+Video de validacion en dos navegadores: De momento no hay
 
 ## Autor
 
