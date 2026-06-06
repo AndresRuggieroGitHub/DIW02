@@ -181,6 +181,21 @@ html.theme-dark .logo-dark {
   display: block;
 }
 
+html.theme-dark .hero-actions .btn-warning {
+  background: #ffe36f;
+  border-color: #ffe36f;
+  color: #221926;
+}
+
+html.theme-dark .hero-actions .btn-warning:hover,
+html.theme-dark .hero-actions .btn-warning:focus,
+html.theme-dark .hero-actions .btn-warning:focus-visible,
+html.theme-dark .hero-actions .btn-warning:active {
+  background: #fff0a3;
+  border-color: #fff0a3;
+  color: #17141c;
+}
+
 .main-nav {
   display: flex;
   flex-wrap: wrap;
@@ -869,5 +884,20 @@ html.theme-dark .logo-dark {
 
   html:not(.theme-light) .logo-dark {
     display: block;
+  }
+
+  html:not(.theme-light) .hero-actions .btn-warning {
+    background: #ffe36f;
+    border-color: #ffe36f;
+    color: #221926;
+  }
+
+  html:not(.theme-light) .hero-actions .btn-warning:hover,
+  html:not(.theme-light) .hero-actions .btn-warning:focus,
+  html:not(.theme-light) .hero-actions .btn-warning:focus-visible,
+  html:not(.theme-light) .hero-actions .btn-warning:active {
+    background: #fff0a3;
+    border-color: #fff0a3;
+    color: #17141c;
   }
 }
