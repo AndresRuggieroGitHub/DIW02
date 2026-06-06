@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip-link" href="#mainContent">Saltar al contenido principal</a>
 <header class="site-header">
   <div class="header-bar container-xl">
     <div class="brand-row">
@@ -32,13 +33,13 @@
       <a href="producto.html">Producto</a>
       <a href="busqueda.html">Busqueda</a>
       <a href="contacto.html">Contacto</a>
-      <a class="active" href="carrito.html">Carrito</a>
+      <a class="active" href="carrito.html" aria-current="page">Carrito</a>
     </nav>
 
     <div class="header-tools">
       <form class="search-bar" action="busqueda.html" method="get" role="search">
         <label class="visually-hidden" for="globalSearch">Buscar productos o packs</label>
-        <input id="globalSearch" class="form-control" type="search" name="q" placeholder="Buscar packs o niveles">
+        <input id="globalSearch" class="form-control" type="search" name="q" placeholder="Buscar packs o niveles" required aria-required="true" title="Introduce un termino para realizar la busqueda">
         <button class="btn btn-warning" type="submit">Buscar</button>
       </form>
       <label class="lang-select" for="langSelect">
@@ -125,9 +126,9 @@
     <div>
       <h2 class="footer-title">Redes</h2>
       <div class="social-links" aria-label="Redes sociales de Lexi">
-        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
-        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
       </div>
     </div>
   </div>

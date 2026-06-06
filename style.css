@@ -125,6 +125,24 @@ main {
   border: 0;
 }
 
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -200px;
+  z-index: 2000;
+  background: var(--text);
+  color: var(--surface);
+  padding: 0.7rem 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  top: 0.9rem;
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -218,6 +236,21 @@ html.theme-dark .hero-actions .btn-warning:active {
 .main-nav a.active {
   color: var(--text);
   border-color: var(--brand-strong);
+}
+
+html.theme-light .section-copy .btn.btn-primary {
+  background: #4d2f82;
+  border-color: #4d2f82;
+  color: #ffffff;
+}
+
+html.theme-light .section-copy .btn.btn-primary:hover,
+html.theme-light .section-copy .btn.btn-primary:focus,
+html.theme-light .section-copy .btn.btn-primary:focus-visible,
+html.theme-light .section-copy .btn.btn-primary:active {
+  background: #62409c;
+  border-color: #62409c;
+  color: #ffffff;
 }
 
 .product-media-links a:visited,
@@ -899,5 +932,22 @@ html.theme-dark .hero-actions .btn-warning:active {
     background: #fff0a3;
     border-color: #fff0a3;
     color: #17141c;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html:not(.theme-dark) .section-copy .btn.btn-primary {
+    background: #4d2f82;
+    border-color: #4d2f82;
+    color: #ffffff;
+  }
+
+  html:not(.theme-dark) .section-copy .btn.btn-primary:hover,
+  html:not(.theme-dark) .section-copy .btn.btn-primary:focus,
+  html:not(.theme-dark) .section-copy .btn.btn-primary:focus-visible,
+  html:not(.theme-dark) .section-copy .btn.btn-primary:active {
+    background: #62409c;
+    border-color: #62409c;
+    color: #ffffff;
   }
 }

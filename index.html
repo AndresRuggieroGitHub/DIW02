@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Lexi, plataforma para practicar ingles con vocabulario personalizado, packs por nivel y ejercicios a medida.">
   <meta name="robots" content="index,follow">
-  <title>Lexi | Practica ingles a tu ritmo</title>
+  <title>Lexi | Aprender ingles con vocabulario personalizado y packs por nivel</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip-link" href="#mainContent">Saltar al contenido principal</a>
 <header class="site-header">
   <div class="header-bar container-xl">
     <div class="brand-row">
@@ -29,7 +30,7 @@
     </div>
 
     <nav class="main-nav" id="mainNav" aria-label="Principal">
-      <a class="active" href="index.html">Inicio</a>
+      <a class="active" href="index.html" aria-current="page">Inicio</a>
       <a href="producto.html">Producto</a>
       <a href="busqueda.html">Busqueda</a>
       <a href="contacto.html">Contacto</a>
@@ -39,7 +40,7 @@
     <div class="header-tools">
       <form class="search-bar" action="busqueda.html" method="get" role="search">
         <label class="visually-hidden" for="globalSearch">Buscar productos o packs</label>
-        <input id="globalSearch" class="form-control" type="search" name="q" placeholder="Buscar packs o niveles">
+        <input id="globalSearch" class="form-control" type="search" name="q" placeholder="Buscar packs o niveles" required aria-required="true" title="Introduce un termino para realizar la busqueda">
         <button class="btn btn-warning" type="submit">Buscar</button>
       </form>
 
@@ -78,7 +79,7 @@
       </div>
 
       <div class="hero-card">
-        <img src="images/hero.png" alt="Estudiante practicando ingles con tarjetas de vocabulario y un portatil" loading="eager">
+        <img src="images/hero.png" alt="Aprender ingles con vocabulario personalizado usando tarjetas y portatil" loading="eager">
       </div>
     </div>
   </section>
@@ -92,7 +93,7 @@
   <section class="feature-section container-xl section-space" aria-labelledby="packsTitle">
     <div class="section-copy">
       <p class="section-kicker">Packs guiados</p>
-      <h2 id="packsTitle">Empieza con contenidos listos para usar</h2>
+      <h2 id="packsTitle">Empieza con packs por nivel y vocabulario personalizado</h2>
       <p>Si quieres avanzar rapido, puedes elegir packs por nivel y por tematica. Cada pack incluye palabras utiles, ejemplos y ejercicios breves para practicar reading, writing y listening.</p>
       <a class="btn btn-primary" href="busqueda.html">Explorar resultados de ejemplo</a>
     </div>
@@ -147,9 +148,9 @@
     <div>
       <h2 class="footer-title">Redes</h2>
       <div class="social-links" aria-label="Redes sociales de Lexi">
-        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
-        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
       </div>
     </div>
   </div>

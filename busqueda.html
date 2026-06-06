@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip-link" href="#mainContent">Saltar al contenido principal</a>
 <header class="site-header">
   <div class="header-bar container-xl">
     <div class="brand-row">
@@ -30,7 +31,7 @@
     <nav class="main-nav" id="mainNav" aria-label="Principal">
       <a href="index.html">Inicio</a>
       <a href="producto.html">Producto</a>
-      <a class="active" href="busqueda.html">Busqueda</a>
+      <a class="active" href="busqueda.html" aria-current="page">Busqueda</a>
       <a href="contacto.html">Contacto</a>
       <a href="carrito.html">Carrito</a>
     </nav>
@@ -38,7 +39,7 @@
     <div class="header-tools">
       <form class="search-bar" action="busqueda.html" method="get" role="search">
         <label class="visually-hidden" for="globalSearch">Buscar productos o packs</label>
-        <input id="globalSearch" class="form-control" type="search" name="q" placeholder="Buscar packs o niveles">
+        <input id="globalSearch" class="form-control" type="search" name="q" placeholder="Buscar packs o niveles" required aria-required="true" title="Introduce un termino para realizar la busqueda">
         <button class="btn btn-warning" type="submit">Buscar</button>
       </form>
       <label class="lang-select" for="langSelect">
@@ -70,7 +71,7 @@
     <aside class="page-intro-card">
       <form class="search-bar" action="busqueda.html" method="get" role="search">
         <label class="visually-hidden" for="searchInput">Buscar cursos</label>
-        <input id="searchInput" data-search-input class="form-control" type="search" name="q" placeholder="Ejemplo: speaking, A1, viajes">
+        <input id="searchInput" data-search-input class="form-control" type="search" name="q" placeholder="Ejemplo: speaking, A1, viajes" required aria-required="true" title="Introduce un criterio de busqueda valido">
         <button class="btn btn-primary" type="submit">Aplicar criterio</button>
       </form>
     </aside>
@@ -134,9 +135,9 @@
     <div>
       <h2 class="footer-title">Redes</h2>
       <div class="social-links" aria-label="Redes sociales de Lexi">
-        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
-        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
       </div>
     </div>
   </div>
