@@ -1,93 +1,128 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pagina de contacto de Lexi.">
+  <meta name="description" content="Pagina de contacto de Lexi con historia del proyecto, equipo y datos basicos de contacto.">
   <meta name="robots" content="index,follow">
   <title>Lexi | Contacto</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<a href="#mainContent" class="skip-link">Saltar al contenido</a>
+<header class="site-header">
+  <div class="header-bar container-xl">
+    <div class="brand-row">
+      <div class="logo" aria-label="Logotipo de Lexi">
+        <img class="logo-light" src="icons/logo_fondo_claro.svg" alt="">
+        <img class="logo-dark" src="icons/logo_fondo_oscuro.svg" alt="">
+        <span>Lexi</span>
+      </div>
+      <button class="nav-toggle" type="button" aria-label="Abrir menu principal" aria-expanded="false" aria-controls="mainNav">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
 
-<header class="header">
-  <div class="header-left">
-    <a class="logo" href="index.html" aria-label="Ir a inicio Lexi">
-      <img src="icons/logo.svg" alt="Logo Lexi">
-    </a>
-    <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">
-      <i class="bi bi-list"></i>
-    </button>
-    <nav class="nav-left" id="mainNav">
+    <nav class="main-nav" id="mainNav" aria-label="Principal">
       <a href="index.html">Inicio</a>
-      <a href="ejercicios.html">Ejercicios</a>
       <a href="producto.html">Producto</a>
       <a href="busqueda.html">Busqueda</a>
       <a class="active" href="contacto.html">Contacto</a>
-      <a href="info.html">Info</a>
+      <a href="carrito.html">Carrito</a>
     </nav>
-  </div>
 
-  <div class="header-right">
-    <button class="icon-btn" type="button" aria-label="Progreso">
-      <img src="icons/progress.svg" alt="Progreso" class="icono-oscilante">
-    </button>
-    <button class="icon-btn" type="button" aria-label="Idioma ingles">
-      <img src="icons/united_kingdom_flag.svg" alt="Bandera de idioma" class="icono-parpadeante">
-    </button>
-    <button class="icon-btn" type="button" aria-label="Perfil">
-      <img src="icons/profile.svg" alt="Perfil">
-    </button>
-    <button class="icon-btn cart-trigger" type="button" data-cart-trigger aria-label="Abrir carrito">
-      <i class="bi bi-cart3"></i>
-      <span class="cart-count-badge" data-cart-count>0</span>
-    </button>
+    <div class="header-tools">
+      <form class="search-bar" action="busqueda.html" method="get" role="search">
+        <label class="visually-hidden" for="globalSearch">Buscar productos o packs</label>
+        <input id="globalSearch" class="form-control" type="search" name="q" placeholder="Buscar packs o niveles">
+        <button class="btn btn-warning" type="submit">Buscar</button>
+      </form>
+      <label class="lang-select" for="langSelect">
+        <span class="visually-hidden">Seleccionar idioma de la interfaz</span>
+        <select id="langSelect" class="form-select" aria-label="Selector de idioma">
+          <option selected>ES</option>
+          <option>EN</option>
+        </select>
+      </label>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar a modo oscuro" aria-pressed="false" title="Cambiar tema">
+        <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
+        <span class="visually-hidden">Cambiar entre modo claro y oscuro</span>
+      </button>
+      <a class="cart-button" href="carrito.html" aria-label="Ir al carrito de compra">
+        <i class="bi bi-cart3" aria-hidden="true"></i>
+        <span>Carrito</span>
+      </a>
+    </div>
   </div>
 </header>
 
-<main id="mainContent" class="page-main container section-space">
-  <h1 class="mb-4">Contacto</h1>
+<main id="mainContent" class="page-main">
+  <section class="page-intro section-space">
+    <div class="page-copy">
+      <p class="section-kicker">Contacto</p>
+      <h1>Quienes estan detras de Lexi</h1>
+      <p>Lexi nace como una propuesta para practicar idiomas de forma mas flexible, evitando recorridos cerrados y dando protagonismo al vocabulario que realmente necesita cada estudiante.</p>
+    </div>
+    <aside class="page-intro-card">
+      <p class="mb-2"><strong>Email:</strong> contacto@lexi.app</p>
+      <p class="mb-2"><strong>Telefono:</strong> +34 600 123 123</p>
+      <p class="mb-0"><strong>Ubicacion:</strong> Almeria, Andalucia</p>
+    </aside>
+  </section>
 
-  <div class="contact-grid">
-    <section>
-      <h2 class="h4">Escribenos</h2>
-      <form class="contact-form" action="#" method="post">
-        <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre</label>
-          <input id="nombre" name="nombre" class="form-control" type="text" required>
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input id="email" name="email" class="form-control" type="email" required>
-        </div>
-        <div class="mb-3">
-          <label for="mensaje" class="form-label">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" class="form-control" rows="4" required></textarea>
-        </div>
-        <button class="btn btn-primary" type="submit">Enviar</button>
-      </form>
-    </section>
+  <section class="contact-grid section-space">
+    <article class="contact-card">
+      <img src="images/team.jpg" alt="Equipo de Lexi trabajando en el proyecto">
+      <div class="mt-4">
+        <h2 class="h4">Historia del proyecto</h2>
+        <p class="contact-text">La idea surge al detectar que muchas plataformas de idiomas obligan a seguir rutas largas y poco personalizadas. Lexi quiere resolver ese problema con una interfaz clara, visual y centrada en el repaso util.</p>
+      </div>
+    </article>
 
-    <section>
-      <h2 class="h4">Equipo Lexi</h2>
-      <p>Aplicacion web de aprendizaje de idiomas centrada en practica personalizada.</p>
-      <p>Email: contacto@lexi.app</p>
-      <p>Ubicacion: Almeria</p>
-    </section>
-  </div>
+    <article class="contact-card">
+      <h2 class="h4">Como puedes contactar</h2>
+      <ul class="contact-list">
+        <li>Consulta por email para resolver dudas sobre los packs.</li>
+        <li>Solicita informacion sobre niveles, tematicas y contenidos disponibles.</li>
+        <li>Encuentranos tambien en redes para novedades y demostraciones.</li>
+      </ul>
+      <div class="social-links mt-4" aria-label="Redes sociales de contacto">
+        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+      </div>
+    </article>
+  </section>
 </main>
 
-<footer class="footer">
-  <p>Lexi &copy; 2026 &middot; <a href="info.html">Informacion</a></p>
+<footer class="site-footer">
+  <div class="container-xl footer-layout">
+    <div>
+      <h2 class="footer-title">Lexi</h2>
+      <p>Plataforma web para practicar ingles con vocabulario personalizado, packs por nivel y ejercicios sencillos.</p>
+    </div>
+    <div>
+      <h2 class="footer-title">Contacto</h2>
+      <p>Almeria, Andalucia</p>
+      <p>contacto@lexi.app</p>
+      <p>+34 600 123 123</p>
+    </div>
+    <div>
+      <h2 class="footer-title">Redes</h2>
+      <div class="social-links" aria-label="Redes sociales de Lexi">
+        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+  <p class="footer-copy">&copy; 2025 Lexi</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
