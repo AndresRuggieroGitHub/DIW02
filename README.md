@@ -66,7 +66,6 @@ Incluye:
 ## Publicacion
 
 - Repositorio: https://github.com/AndresRuggieroGitHub/DIW6
-- GitHub Pages: https://andresruggierogithub.github.io/DIW6/
 
 ## Demo
 
