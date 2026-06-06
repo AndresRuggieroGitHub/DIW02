@@ -63,14 +63,6 @@ Incluye:
 1. Descargar o clonar el repositorio.
 2. Abrir index.html en el navegador.
 
-## Publicacion
-
-- Repositorio: https://github.com/AndresRuggieroGitHub/DIW6
-
-## Demo
-
-Video de validacion en dos navegadores: De momento no hay
-
 ## Autor
 
 Andres Ruggiero
